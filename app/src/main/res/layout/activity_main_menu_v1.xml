@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity_v1"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#663366CC"
+        android:gravity="start">
+
+        <!-- BOTON VOLVER AL LOGIN -->
+        <ImageButton
+            android:id="@+id/ibmenuv1Back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundstyle_v5"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_logout_24" />
+    </LinearLayout>
+
+    <!-- TITULO MENÚ DE OPCIONES -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENÚ DE OPCIONES"
+        android:layout_gravity="center"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!-- BOTONES -->
+
+    <!-- TITULO IR A REGISTRAR AUTO -->
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR AUTO"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="#3B325FB8"
+        android:background="@drawable/roundstyle_v1" />
+
+    <!-- BOTON IR A REGISTRAR AUTO -->
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:id="@+id/ibmenuv1RegisterCar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#3B325FB8"
+        android:background="@drawable/roundstyle_v4"
+        android:src="@drawable/ic_baseline_ads_click_24" />
+
+    <!-- TITULO IR A DEVOLVER AUTO -->
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="DEVOLVER AUTO"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="#3B325FB8"
+        android:background="@drawable/roundstyle_v1" />
+
+    <!-- BOTON IR A DEVOLVER AUTO -->
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:id="@+id/ibmenuv1ReturnCar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="119dp"
+        android:backgroundTint="#3B325FB8"
+        android:background="@drawable/roundstyle_v4"
+        android:src="@drawable/ic_baseline_ads_click_24" />
+
+    <!-- BARRA INFERIOR -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#663366CC" > </TextView>
+
+</LinearLayout>

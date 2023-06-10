@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_renta_lista"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#663366CC"
+        android:gravity="start">
+
+        <!-- BOTON VOLVER AL MENÚ -->
+        <ImageButton
+            android:id="@+id/iblistBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/roundstyle_v5"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+    </LinearLayout>
+
+    <!-- TITULO LISTADO DE RENTAS -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTADO DE RENTAS"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvlistRent"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000000" />
+
+    <!-- BARRA INFERIOR -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#663366CC" > </TextView>
+
+</LinearLayout>

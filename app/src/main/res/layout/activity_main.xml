@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#663366CC" > </TextView>
+
+    <!-- TITULO INICIAR SESION -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESIÓN"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!-- TITULO USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUARIO"
+        android:layout_gravity="start"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <!-- CAMPO USUARIO -->
+    <EditText
+        android:id="@+id/etloginUser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO CONTRASEÑA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTRASEÑA"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO CONTRASEÑA -->
+    <EditText
+        android:id="@+id/etloginPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="textPassword" />
+
+    <!-- BOTON ¿OLVIDASTE TU CONTRASEÑA? -->
+    <Button
+        android:id="@+id/btnloginForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="¿OLVIDASTE TU CONTRASEÑA?"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColorHint="#3366CC"
+        android:outlineSpotShadowColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp" >
+
+        <!-- BOTON INICIAR SESION -->
+        <ImageButton
+            android:id="@+id/ibloginEnter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#3B325FB8"
+            android:background="@drawable/roundstyle_v1"
+            android:src="@drawable/ic_baseline_login_24" />
+    </LinearLayout>
+
+    <!-- BOTON REGISTRAR USUARIO -->
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnloginUserRegister"
+        android:hint="REGISTRAR USUARIO"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="70dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="#3B325FB8"
+        android:textColorHint="@color/black"
+        android:outlineSpotShadowColor="@color/white" />
+
+    <!-- BARRA INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:background="#663366CC" >
+
+        <!-- BOTON LIMPIAR -->
+        <ImageButton
+            android:id="@+id/ibloginClean"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/roundstyle_v3"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_cleaning_services_24" />
+    </LinearLayout>
+
+</LinearLayout>

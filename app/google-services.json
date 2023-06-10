@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363347880629",
+    "project_id": "rentauto-687d9",
+    "storage_bucket": "rentauto-687d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        
+        "mobilesdk_app_id": "1:363347880629:android:880323929b9beecb056cfc",
+        "android_client_info": {
+          "package_name": "com.practica.rentcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363347880629-3363k4jqebi34d3lk13m56ifu61jbbrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjy4bq8fPZPxMGXOwEX-XzWpkYjsEncj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363347880629-3363k4jqebi34d3lk13m56ifu61jbbrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

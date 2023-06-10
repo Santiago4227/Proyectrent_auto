@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_auto"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="start"
+        android:background="#663366CC" >
+
+        <!-- BOTON VOLVER AL MENÚ DE OPCIONES -->
+        <ImageButton
+            android:id="@+id/ibcarBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/roundstyle_v5"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <!-- BOTON LIMPIAR -->
+        <ImageButton
+            android:id="@+id/ibcarClean"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="290dp"
+            android:background="@drawable/roundstyle_v6"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_cleaning_services_24" />
+    </LinearLayout>
+
+    <!-- TITULO REGISTRAR AUTO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR AUTO"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!-- TITULO NUMERO DE PLACA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUMERO DE PLACA"
+        android:layout_gravity="start"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <!-- CAMPO NUMERO DE PLACA -->
+    <EditText
+        android:id="@+id/etcarPlateNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO MARCA DEL AUTO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARCA DEL AUTO"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO MARCA DEL AUTO -->
+    <EditText
+        android:id="@+id/etcarBrand"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO VALOR DIARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALOR DIARIO"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO VALOR DIARIO -->
+    <EditText
+        android:id="@+id/etcarValue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="number" />
+
+    <!-- TITULO ESTADO DEL VHICULO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESTADO DEL VEHICULO"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CONTENEDOR USUARIO O ADMINISTRADOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" >
+
+        <!-- TITULO NO DISPONILE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="NO DISPONILE"
+            android:gravity="center"
+            android:textColor="#3366CC"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!-- SWITCH -->
+        <Switch
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:id="@+id/swcarStatus"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <!-- TITULO DISPONIBLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DISPONIBLE"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#3366CC"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- BOTON GUARDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" >
+
+        <!-- BOTON GUARDAR -->
+        <ImageButton
+            android:id="@+id/ibcarSave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#3B325FB8"
+            android:background="@drawable/roundstyle_v1"
+            android:src="@drawable/ic_baseline_save_24" />
+    </LinearLayout>
+
+    <!-- BARRA INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="#663366CC" >
+
+        <!-- BOTON BUSCAR -->
+        <ImageButton
+            android:id="@+id/ibcarSearch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/roundstyle_v2"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_manage_search_24" />
+
+        <!-- BOTON EDITAR -->
+        <ImageButton
+            android:id="@+id/ibcarEdit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginLeft="115dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/roundstyle_v4"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_edit_note_24" />
+
+        <!-- BOTON BORRAR -->
+        <ImageButton
+            android:id="@+id/ibcarDelete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/roundstyle_v3"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_delete_sweep_24" />
+    </LinearLayout>
+
+</LinearLayout>

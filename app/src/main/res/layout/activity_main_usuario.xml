@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_usuario"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#663366CC" > </TextView>
+
+    <!-- TITULO REGISTRAR USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR USUARIO"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!-- TITULO USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUARIO"
+        android:layout_gravity="start"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <!-- CAMPO USUARIO -->
+    <EditText
+        android:id="@+id/etregisterUser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO NOMBRE USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE USUARIO"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO NOMBRE USUARIO -->
+    <EditText
+        android:id="@+id/etregisterName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO CONTRASEÑA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTRASEÑA"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO CONTRASEÑA -->
+    <EditText
+        android:id="@+id/etregisterPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="textPassword" />
+
+    <!-- TITULO PALABRA RESERVADA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PALABRA RESERVADA"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO PALABRA RESERVADA -->
+    <EditText
+        android:id="@+id/etregisterWord"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO ROL DEL USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROL DEL USUARIO"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CONTENEDOR USUARIO O ADMINISTRADOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="13dp" >
+
+        <!-- TITULO USUARIO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="USUARIO"
+            android:gravity="center"
+            android:textColor="#3366CC"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!-- SWITCH -->
+        <Switch
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:id="@+id/swregisterRol"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <!-- TITULO ADMINISTRADOR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADMINISTRADOR"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:textColor="#3366CC"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- BOTON GUARDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" >
+
+        <!-- BOTON GUARDAR -->
+        <ImageButton
+            android:id="@+id/ibregisterSave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#3B325FB8"
+            android:background="@drawable/roundstyle_v1"
+            android:src="@drawable/ic_baseline_save_24" />
+    </LinearLayout>
+
+    <!-- BARRA INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="#663366CC" >
+
+        <!-- BOTON VOLVER AL LOGIN -->
+        <ImageButton
+            android:id="@+id/ibregisterBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/roundstyle_v2"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <!-- BOTON LIMPIAR -->
+        <ImageButton
+            android:id="@+id/ibregisterClean"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="290dp"
+            android:background="@drawable/roundstyle_v3"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_cleaning_services_24" />
+    </LinearLayout>
+
+</LinearLayout>

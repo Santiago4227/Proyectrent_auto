@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_renta"
+    android:orientation="vertical" >
+
+    <!-- BARRA SUPERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#663366CC"
+        android:gravity="end">
+
+        <!-- BOTON VOLVER AL MENÚ -->
+        <ImageButton
+            android:id="@+id/ibrentList"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundstyle_v6"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24" />
+    </LinearLayout>
+
+    <!-- TITULO RENTAR AUTO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RENTAR AUTO"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!-- TITULO NUMERO DE RENTA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUMERO RENTA"
+        android:layout_gravity="start"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <!-- CAMPO NUMERO DE RENTA -->
+    <EditText
+        android:id="@+id/etrentNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO NOMBRE USUARIO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE USUARIO"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO NOMBRE USUARIO -->
+    <EditText
+        android:id="@+id/etrentUserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="text" />
+
+    <!-- TITULO FECHA INICIAL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FECHA INICIAL"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO FECHA INICIAL -->
+    <EditText
+        android:id="@+id/etrentInitialDate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="date" />
+
+    <!-- TITULO FECHA FINAL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FECHA FINAL"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CAMPO FECHA FINAL -->
+
+    <!-- TITULO AUTOS DISPONIBLES -->
+    <EditText
+        android:id="@+id/etrentEndDate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:backgroundTint="#325FB8"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUTOS DISPONIBLES"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- CONTENEDOR AUTOS DISPONIBLES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="13dp" >
+
+        <!-- SPINNER -->
+        <Spinner
+            android:id="@+id/sprentCarsAvailable"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:background="@drawable/outline" />
+    </LinearLayout>
+
+    <!-- BOTON GUARDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp" >
+
+        <!-- BOTON GUARDAR -->
+        <ImageButton
+            android:id="@+id/ibrentSave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/roundstyle_v1"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_save_24" />
+    </LinearLayout>
+
+    <!-- BARRA INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="#663366CC" >
+
+        <!-- BOTON VOLVER AL LOGIN -->
+        <ImageButton
+            android:id="@+id/ibrentBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/roundstyle_v2"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <!-- BOTON LIMPIAR -->
+        <ImageButton
+            android:id="@+id/ibrentClean"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="290dp"
+            android:background="@drawable/roundstyle_v3"
+            android:backgroundTint="#3B325FB8"
+            android:src="@drawable/ic_baseline_cleaning_services_24" />
+    </LinearLayout>
+
+</LinearLayout>
